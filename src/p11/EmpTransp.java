@@ -63,5 +63,27 @@ public class EmpTransp {
         
         return r;
     }
+
+ public String estaDisponible(String placas){
+        String resp = "";
+        int i;
+        i=0;
+        while(i<totCam && camiones[i].getPlacas().equals(placas))
+            i++;
+        if(i<totCam){
+            if(camiones[i] instanceof Escolar)
+                    resp="el camion es escolar";
+                else
+                    if(camiones[i] instanceof Turismo)
+                        resp="el camion es de turismo";
+            
+        }
+        else
+            resp="El camion no esta disponible";
+        return resp;
+        
+        }
+        }
+        
     
 }
