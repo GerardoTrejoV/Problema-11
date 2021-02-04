@@ -23,6 +23,24 @@ public class Turismo extends DePasajeros {
         this.serviBar = serviBar;
     }
 
+    public boolean isAsientoCama() {
+        return asientoCama;
+    }
+
+    public void setAsientoCama(boolean asientoCama) {
+        this.asientoCama = asientoCama;
+    }
+
+    public boolean isServiBar() {
+        return serviBar;
+    }
+
+    public void setServiBar(boolean serviBar) {
+        this.serviBar = serviBar;
+    }
+    
+    
+
     @Override
     public String toString() {
         StringBuilder c= new StringBuilder();
@@ -48,3 +66,4 @@ public class Turismo extends DePasajeros {
         return precio;
     }        
     }
+
